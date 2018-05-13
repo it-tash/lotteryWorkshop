@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.controlInfo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.control{
+    display: flex;
+}
+.player-control, .admin-control{
+    margin: 20px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+    border-radius: 7px;
+}
+#players{
+    margin: 20px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 7px;
+    font-size: 22px;
+    color: #555;
+    overflow: scroll;
+}
+.winner, .info{
+    padding: 10px;
+    margin: 20px;
+    height: 80px;
+    border: 1px solid #999;
+    border-radius: 7px;
+    /*font-size: 25px;*/
+    color: #555;
+}
+#txStatus, #winnersDiv{
+    text-align: center;
+    font-size: 25px;
+    color: #555;
+}
+#playersDiv{
+    text-align: center;
+    font-size: 25px;
+    color: #555;
+}
+button{
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 7px;
+    background: linear-gradient(#aaa, #222 );
+    font-size: 18px;
+    color: white;
+}
+input{
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    height: 60px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+span{
+    font-size: 18px;
+    color: #555;
+}
