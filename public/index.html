@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery front-end</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./web3/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="controlInfo-box">
+        <div class="control">
+            <div class="player-control">
+                <span>Player</span>
+                <input type="text" id="nameInp" placeholder="name">
+                <input type="number" id="pasInp" placeholder="password">
+                <button onclick="enter()">Enter</button>
+            </div>
+            <div class="admin-control">
+                <span>Admin</span>
+                <button onclick="getPlayersArr()">Players</button>
+                <button onclick="getWinner()">Winner</button>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <span>Info</span>
+            <div id="txStatus"></div>
+        </div>
+
+        <div class="winner">
+            <span>Winner</span>
+            <div id="winnersDiv"></div>
+        </div>
+    </div>
+
+    <div id="players">
+        <span>List of players</span>
+        <div id="playersDiv"></div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
